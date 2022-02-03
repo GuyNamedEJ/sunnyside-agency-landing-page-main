@@ -73,13 +73,13 @@ header nav ul {
 }
 
 header nav ul li {
-  margin: .75em;
+  margin: 0.75em;
   text-align: center;
 }
 
 header nav ul a {
   text-decoration: none;
-  font-family: 'Barlow',serif;
+  font-family: "Barlow", serif;
   color: #808397;
   font-size: 1.25rem;
 }

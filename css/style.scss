@@ -29,8 +29,8 @@ header {
   //padding:2rem 1.5rem;
   nav {
     position: absolute;
-    top:2em;
-    right:0;
+    top: 2em;
+    right: 0;
     background: url("../images/mobile-menu.svg");
     width: 329px;
     height: 329px;
@@ -39,28 +39,27 @@ header {
     justify-content: center;
     z-index: 999;
 
-    ul{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        list-style: none;
-        margin:0;
-        padding:0;
-        
-        li{
-            margin:.75em;
-            text-align: center;
-           
-        }
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
 
-        a{
-            text-decoration:none;
-            font-family: 'Barlow',serif;
-            color:#808397;
-            font-size: 1.25rem;
-        }
+      li {
+        margin: 0.75em;
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+        font-family: "Barlow", serif;
+        color: #808397;
+        font-size: 1.25rem;
+      }
     }
   }
 
