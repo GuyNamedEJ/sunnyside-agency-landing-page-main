@@ -1,0 +1,384 @@
+body {
+  position: relative;
+}
+
+.wrapper {
+  padding: 2rem 1.5rem;
+  padding-bottom: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../images/mobile/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  width: 100%;
+  z-index: -1;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+header nav {
+  position: absolute;
+  top: 2em;
+  right: 0;
+  background: url("../images/mobile-menu.svg");
+  width: 329px;
+  height: 329px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 999;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: .75em;
+  text-align: center;
+}
+
+header nav ul a {
+  text-decoration: none;
+  font-family: 'Barlow',serif;
+  color: #808397;
+  font-size: 1.25rem;
+}
+
+header .menu {
+  width: 24px;
+}
+
+.hero {
+  position: relative;
+  height: 60vh;
+  margin-top: 4.7rem;
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-family: "Fraunces", serif;
+  text-align: center;
+  letter-spacing: 6.25px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+}
+
+.hero .down-arrow {
+  width: 1.875em;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+
+.more-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.more-info .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.more-info .feature .content {
+  padding: 4rem 1.5rem;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  text-align: center;
+}
+
+.more-info .feature .content .title {
+  font-family: "Fraunces", serif;
+  font-size: 2em;
+  color: #24303e;
+  margin-bottom: 24px;
+}
+
+.more-info .feature .content .desc {
+  font-size: 1.125rem;
+  color: #808397;
+  font-family: "Barlow", sans-serif;
+  line-height: 1.875rem;
+  letter-spacing: -0.13px;
+}
+
+.more-info .feature .content .link {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  color: #24303e;
+  -webkit-text-decoration: underline solid rgba(250, 212, 0, 0.3) 5px;
+          text-decoration: underline solid rgba(250, 212, 0, 0.3) 5px;
+}
+
+.more-info .feature:nth-child(even) .content .link {
+  -webkit-text-decoration: underline solid rgba(254, 119, 102, 0.3) 5px;
+          text-decoration: underline solid rgba(254, 119, 102, 0.3) 5px;
+}
+
+.more-info .feature img {
+  width: 100%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.services .service {
+  width: 100%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 3.6875rem 1.5rem;
+}
+
+.services .service .services-title {
+  font-family: "Fraunces", serif;
+  font-size: 1.75rem;
+  text-transform: capitalize;
+  margin-bottom: 27px;
+}
+
+.services .service .services-info {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6875em;
+  letter-spacing: -0.11px;
+}
+
+.services .service.graphic-design {
+  background: url("../images/mobile/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.services .service.graphic-design .services-title {
+  color: #24554a;
+}
+
+.services .service.graphic-design .services-info {
+  color: #24554a;
+}
+
+.services .service.photography {
+  background: url("../images/mobile/image-photography.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.services .service.photography .services-title {
+  color: #19536c;
+}
+
+.services .service.photography .services-info {
+  color: #19536c;
+}
+
+.testimonials .wrapper {
+  padding-top: 4rem;
+}
+
+.testimonials h2 {
+  text-align: center;
+  font-family: "Fraunces", serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #a7aaad;
+  margin-bottom: 4rem;
+}
+
+.testimonials .testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.testimonials .testimonial:last-child {
+  margin-bottom: 5.375rem;
+}
+
+.testimonials .testimonial img {
+  width: 4.5rem;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+}
+
+.testimonials .testimonial .testimonial-text {
+  font-family: "Barlow", sans-serif;
+  color: #5b636d;
+  margin-bottom: 2rem;
+  line-height: 2rem;
+  letter-spacing: -0.13;
+}
+
+.testimonials .testimonial .client-name {
+  font-family: "Fraunces", serif;
+  font-size: 1.125rem;
+  margin-bottom: 9px;
+}
+
+.testimonials .testimonial .client-title {
+  font-family: "Barlow", sans-serif;
+  color: #a7aaad;
+  line-height: 25px;
+  font-size: 0.875rem;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 50%;
+}
+
+footer {
+  background: #90d4c6;
+}
+
+footer .wrapper {
+  padding: 4rem 2.4375rem 5rem 2.4375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .wrapper .footer-logo path {
+  fill: #2c7566;
+}
+
+footer .wrapper nav {
+  width: 100%;
+}
+
+footer .wrapper nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: 2.5rem;
+  margin-bottom: 5.5rem;
+}
+
+footer .wrapper nav ul a {
+  padding: 0.5em;
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  color: #458d7e;
+  font-family: 1.125rem;
+  width: 100%;
+}
+
+footer .wrapper .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .wrapper .social-links a {
+  padding: 0.5em;
+}
+/*# sourceMappingURL=style.css.map */
