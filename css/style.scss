@@ -123,13 +123,13 @@ header {
         font-family: "Fraunces", serif;
         text-transform: uppercase;
         color: #24303e;
-        text-decoration: underline solid rgba(250, 212, 0, 0.3) 5px;
+        //text-decoration: underline solid rgba(250, 212, 0, 0.3) 5px;
       }
     }
     &:nth-child(even) {
       .content {
         .link {
-          text-decoration: underline solid rgba(254, 119, 102, 0.3) 5px;
+          //text-decoration: underline solid rgba(254, 119, 102, 0.3) 5px;
         }
       }
     }
@@ -141,6 +141,7 @@ header {
 }
 
 .services {
+    
   .service {
     width: 100%;
     height: 600px;
@@ -148,7 +149,7 @@ header {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 3.6875rem 1.5rem;
 
     .services-title {
@@ -170,13 +171,11 @@ header {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      .services-title {
+      
+      .services-title,  .services-info {
         color: #24554a;
       }
 
-      .services-info {
-        color: #24554a;
-      }
     }
 
     &.photography {
@@ -185,11 +184,7 @@ header {
       background-position: center;
       background-size: cover;
 
-      .services-title {
-        color: #19536c;
-      }
-
-      .services-info {
+      .services-title, .services-info {
         color: #19536c;
       }
     }

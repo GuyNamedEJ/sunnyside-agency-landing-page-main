@@ -159,13 +159,6 @@ header .menu {
   font-family: "Fraunces", serif;
   text-transform: uppercase;
   color: #24303e;
-  -webkit-text-decoration: underline solid rgba(250, 212, 0, 0.3) 5px;
-          text-decoration: underline solid rgba(250, 212, 0, 0.3) 5px;
-}
-
-.more-info .feature:nth-child(even) .content .link {
-  -webkit-text-decoration: underline solid rgba(254, 119, 102, 0.3) 5px;
-          text-decoration: underline solid rgba(254, 119, 102, 0.3) 5px;
 }
 
 .more-info .feature img {
@@ -191,7 +184,7 @@ header .menu {
           align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   padding: 3.6875rem 1.5rem;
 }
 
@@ -216,11 +209,7 @@ header .menu {
   background-size: cover;
 }
 
-.services .service.graphic-design .services-title {
-  color: #24554a;
-}
-
-.services .service.graphic-design .services-info {
+.services .service.graphic-design .services-title, .services .service.graphic-design .services-info {
   color: #24554a;
 }
 
@@ -231,11 +220,7 @@ header .menu {
   background-size: cover;
 }
 
-.services .service.photography .services-title {
-  color: #19536c;
-}
-
-.services .service.photography .services-info {
+.services .service.photography .services-title, .services .service.photography .services-info {
   color: #19536c;
 }
 
