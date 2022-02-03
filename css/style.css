@@ -162,14 +162,14 @@ header .menu {
   text-decoration: underline;
   -webkit-text-decoration-color: rgba(250, 212, 0, 0.3);
           text-decoration-color: rgba(250, 212, 0, 0.3);
-  text-decoration-thickness: 50%;
+  text-decoration-thickness: 10px;
 }
 
 .more-info .feature:nth-child(even) .content .link {
   text-decoration: underline;
   -webkit-text-decoration-color: rgba(254, 119, 102, 0.3);
           text-decoration-color: rgba(254, 119, 102, 0.3);
-  text-decoration-thickness: 50%;
+  text-decoration-thickness: 10px;
 }
 
 .more-info .feature img {
