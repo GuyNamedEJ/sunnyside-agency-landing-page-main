@@ -2,6 +2,17 @@ body {
   position: relative;
 }
 
+.contact {
+  font-family: 'Fraunces',sans-serif;
+  background: #FBD600;
+  border-radius: 28px;
+  padding: 16px 32px;
+  width: 140px;
+  color: #24303E;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
 .wrapper {
   padding: 2rem 1.5rem;
   padding-bottom: 0;
@@ -17,7 +28,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   z-index: -1;
 }
@@ -33,11 +44,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  height: 10vh;
 }
 
 header nav {
   position: absolute;
-  top: 2em;
+  top: 4em;
   right: 0;
   background: url("../images/mobile-menu.svg");
   width: 329px;
@@ -89,13 +101,24 @@ header .menu {
 }
 
 .hero {
+  background-image: url("../images/mobile/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
-  height: 50vh;
-  margin-top: 4.7rem;
+  height: 100vh;
   width: 100%;
 }
 
 .hero h1 {
+  padding-top: 4.7rem;
   font-size: 2.5rem;
   font-family: "Fraunces", serif;
   text-align: center;
@@ -108,8 +131,19 @@ header .menu {
 .hero .down-arrow {
   width: 1.875em;
   position: absolute;
-  top: 40%;
-  left: 45%;
+  top: 50%;
+}
+
+.hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .more-info {
@@ -237,10 +271,6 @@ header .menu {
   color: #19536c;
 }
 
-.testimonials .wrapper {
-  padding-top: 4rem;
-}
-
 .testimonials h2 {
   text-align: center;
   font-family: "Fraunces", serif;
@@ -248,6 +278,7 @@ header .menu {
   text-transform: uppercase;
   font-size: 1rem;
   color: #a7aaad;
+  padding-top: 4rem;
   margin-bottom: 4rem;
 }
 
@@ -376,5 +407,170 @@ footer .wrapper .social-links {
 
 footer .wrapper .social-links a {
   padding: 0.5em;
+}
+
+@media (min-width: 1400px) {
+  .wrapper {
+    padding: 34px 48px;
+    padding-bottom: 0;
+  }
+  .contact {
+    background: #FFFFFF;
+    color: #24303E;
+  }
+  header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header nav {
+    position: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: none;
+    width: auto;
+    height: auto;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  header nav ul li {
+    margin: 0.75em;
+    text-align: center;
+  }
+  header nav ul a {
+    text-decoration: none;
+    font-family: "Barlow", serif;
+    color: white;
+    font-size: 1.25rem;
+  }
+  header .logo img {
+    width: 170px;
+  }
+  header .menu {
+    display: none;
+  }
+  .hero {
+    background: url("../images/desktop/image-header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .hero .down-arrow {
+    top: 45%;
+    width: 40px;
+  }
+  .hero-content h1 {
+    font-size: 56px;
+  }
+  .more-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .more-info .feature {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .more-info .feature .content {
+    padding: 158px 110px 157px 165px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 50%;
+    text-align: left;
+  }
+  .more-info .feature .content .title {
+    font-size: 40px;
+  }
+  .more-info .feature .content .desc {
+    margin-bottom: 40px;
+  }
+  .more-info .feature img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 50%;
+  }
+  .more-info .feature.feature:nth-child(even) .content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .more-info .feature.feature:nth-child(even) img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .services .service {
+    padding: 0 190px;
+  }
+  .services .service.graphic-design {
+    background: url("../images/desktop/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .services .service.photography {
+    background: url("../images/desktop/image-photography.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .testimonials h2 {
+    margin-top: 160px;
+    margin-bottom: 81px;
+  }
+  .testimonials .wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .testimonials .testimonial-text {
+    font-size: 18px;
+    line-height: 32px;
+    width: 350px;
+  }
+  .gallery img {
+    width: 25%;
+  }
+  footer .wrapper {
+    padding: 72px 571px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
