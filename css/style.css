@@ -11,6 +11,13 @@ body {
   color: #24303E;
   font-size: 15px;
   text-transform: uppercase;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.contact:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .wrapper {
